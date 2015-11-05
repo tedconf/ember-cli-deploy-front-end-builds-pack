@@ -1,25 +1,39 @@
-# Ember-cli-deploy-front-end-builds-pack
+# Front end builds pack for Ember.JS
 
-This README outlines the details of collaborating on this Ember addon.
+This deploy pack  packages all of the addons needed to deploy Ember.JS
+application to a front end builds server.
 
-## Installation
+## Install
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```
+ember install ember-cli-deploy
+ember install ember-cli-deploy-front-end-builds-pack
+```
 
-## Running
+It will ask to overwrite your `config/deploy.js`, enter yes.
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+## Configure
 
-## Running Tests
+First, open `config/deploy.js` and enter your application name, staging
+hostname, and production hostname.
 
-* `ember test`
-* `ember test --server`
+Next you'll need to make sure you have the following ENV vars set.
 
-## Building
+ENV | Notes
+--- | ---
+`FEB_AWS_ACCESS_KEY_ID` | Your FEB AWS key
+`FEB_AWS_SECRET_ACCESS_KEY` | Your FEB AWS secret
+`FEB_AWS_BUCKET_NAME` | The bucket you are deploying to
+`FEB_DEPLOY_KEY` | The path to the key used to sign you front ends
 
-* `ember build`
+## Deploy
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+Run `ember deploy <stage>` to deploy your Ember app.
+
+Examples:
+
+```
+ember deploy production
+ember deploy staging
+```
+
