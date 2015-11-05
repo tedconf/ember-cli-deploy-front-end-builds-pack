@@ -26,6 +26,23 @@ ENV | Notes
 `FEB_AWS_BUCKET_NAME` | The bucket you are deploying to
 `FEB_DEPLOY_KEY` | The path to the key used to sign you front ends
 
+### Ember asset-rev
+
+Since we're deploying assets to S3 you'll want to have asset-rev
+pointing to the correct place. You should add the following to
+`ember-cli-build.js`.
+
+```javascript
+var app = new EmberApp(defaults, {
+  // Add options here
+  fingerprint: {
+    prepend: 'https://s3.amazonaws.com/<BUCKET_NAME>/<APP_NAME>/'
+  }
+});
+```
+
+Note you should fill in the correct `BUCKET_NAME` and `APP_NAME`.
+
 ## Deploy
 
 Run `ember deploy <stage>` to deploy your Ember app.
