@@ -1,7 +1,7 @@
 # Front end builds pack for Ember.JS
 
-This deploy pack  packages all of the addons needed to deploy Ember.JS
-application to a [front end builds](https://github.com/tedconf/front_end_builds) server.
+This deploy pack  packages all of the addons needed to deploy an Ember.JS
+application to a [Frontend Builds](https://github.com/tedconf/front_end_builds)-enabled server.
 
 ## Install
 
