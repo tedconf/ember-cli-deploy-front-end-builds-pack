@@ -1,7 +1,7 @@
 /* jshint node: true */
 
 // Configure this stuff...
-var app = 'YOUR_APP_NAME_HERE';
+var app = 'YOUR_FEB_APP_NAME_HERE';
 var stagingHost = 'https://STAGING_HOSTNAME';
 var productionHost = 'https://PRODUCTION_HOSTNAME';
 
