@@ -1,6 +1,6 @@
 # Front end builds pack for Ember.JS
 
-This deploy pack  packages all of the addons needed to deploy an Ember.JS
+This deploy pack packages all of the addons needed to deploy an Ember.JS
 application to a [Frontend Builds](https://github.com/tedconf/front_end_builds)-enabled server.
 
 ## Install
@@ -24,7 +24,7 @@ ENV | Notes
 `FEB_AWS_ACCESS_KEY_ID` | Your FEB AWS key
 `FEB_AWS_SECRET_ACCESS_KEY` | Your FEB AWS secret
 `FEB_AWS_BUCKET_NAME` | The bucket you are deploying to
-`FEB_DEPLOY_KEY` | The path to the key used to sign you front ends
+`FEB_DEPLOY_KEY` | The path to the private key that will be used to sign your front ends. This should correspond to the public key that you register in the Front-End Builds Admin interface.
 
 ### Ember asset-rev
 
