@@ -25,9 +25,8 @@
     "ember-cli-babel": "^7.11.1",
     "ember-cli-deploy": "^1.0.2",
     "ember-cli-deploy-build": "^2.0.0",
-  "repository": "tedconf/ember-cli-deploy-front-end-builds-pack",
-  "engines": {
-    "node": ">= 0.10.0"
+    "ember-cli-deploy-front-end-builds": "mfeckie/ember-cli-deploy-front-end-builds#6a8598413522af071dd27fc0da4d8bdd052ddb8d",
+    "ember-cli-deploy-gzip": "^1.0.1",
     "ember-cli-deploy-plugin": "^0.2.0",
     "ember-cli-deploy-s3": "^1.4.0",
     "ember-cli-htmlbars": "^4.0.0"
